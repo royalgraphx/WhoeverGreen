@@ -482,9 +482,9 @@ void WEG::processExternalProperties(IORegistryEntry *device, DeviceInfo *info, u
 	// However, we will try to at least name them in a unique manner (GFX0, GFX1, ...)
 	if (device->getProperty("preserve-names") == nullptr
 		&& currentExternalGfxIndex <= MaxExternalGfxIndex
-		&& (!name || strncmp(name, "GFX", strlen("GFX")) != 0)) {
+		&& (!name || strncmp(name, "PXS", strlen("PXS")) != 0)) {
 		char name[16];
-		snprintf(name, sizeof(name), "GFX%u", currentExternalGfxIndex++);
+		snprintf(name, sizeof(name), "PXS%u", currentExternalGfxIndex++);
 		WIOKit::renameDevice(device, name);
 	}
 

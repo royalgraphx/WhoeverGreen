@@ -215,7 +215,7 @@ private:
 	 *  GPU index used for GFXx naming in IORegistry
 	 *  Must be single digits (i.e. 0~9 inclusive).
 	 */
-	uint8_t currentExternalGfxIndex {0};
+	uint8_t currentExternalGfxIndex {1};
 
 	/**
 	 *  Maximum GFX slot naming index
